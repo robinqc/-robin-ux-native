@@ -1,0 +1,12 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@robin-ux/native": ["../src/index"],
+      "@robin-ux/native/*": ["../src/*"],
+      "robin-ux-native": ["../src/index"],
+      "robin-ux-native/*": ["../src/*"]
+    }
+  }
+}
