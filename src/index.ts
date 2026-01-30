@@ -8,7 +8,7 @@ export { defaultDarkColors, defaultDarkTheme, defaultLightColors, defaultTheme, 
 export type { Theme, ThemeColors, ThemeContextValue, ThemeProviderProps } from "./theme";
 
 // Components
-export { Badge, BaseInput, Button, DynamicStatusBar, HeaderView, Input, PasswordInput, SegmentedControl, Text } from "./components";
+export { Badge, BaseInput, Button, DynamicStatusBar, FormView, HeaderView, Input, PasswordInput, SegmentedControl, Text, TextArea } from "./components";
 
 export type {
     BadgeProps,
@@ -17,10 +17,12 @@ export type {
     ButtonSize,
     ButtonVariant,
     DynamicStatusBarProps,
+    FormViewProps,
     InputProps,
     Segment,
     SegmentedControlProps,
     TextAlign,
+    TextAreaProps,
     TextColor,
     TextProps,
     TextVariant,

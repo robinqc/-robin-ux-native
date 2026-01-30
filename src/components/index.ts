@@ -24,3 +24,9 @@ export type { DynamicStatusBarProps } from "./DynamicStatusBar";
 
 export { HeaderView } from "./HeaderView";
 export type { HeaderViewProps } from "./HeaderView";
+
+export { FormView } from "./FormView";
+export type { FormViewProps } from "./FormView";
+
+export { TextArea } from "./TextArea";
+export type { TextAreaProps } from "./TextArea";
