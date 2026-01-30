@@ -1,6 +1,6 @@
 {
     "name": "@robin-ux/native",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Themeable React Native UI components for Expo projects",
     "main": "build/index.js",
     "types": "build/index.d.ts",
