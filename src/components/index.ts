@@ -30,3 +30,6 @@ export type { FormViewProps } from "./FormView";
 
 export { TextArea } from "./TextArea";
 export type { TextAreaProps } from "./TextArea";
+
+export { Card } from "./Card";
+export type { CardProps } from "./Card";
