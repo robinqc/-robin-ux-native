@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Animated, ScrollViewProps, StyleProp, View, ViewStyle } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme } from "../theme";
 import { layouts, spacing, useThemedStyles } from "../utils";
 import { DynamicStatusBar } from "./DynamicStatusBar";
 import { Text } from "./Text";
@@ -17,7 +16,6 @@ export interface HeaderViewProps {
 }
 
 export function HeaderView({ title, actionButton, children, scrollViewProps, style, defaultStyle, fixed = false }: HeaderViewProps) {
-    const { isDark } = useTheme();
     const scrollY = useRef(new Animated.Value(0)).current;
 
     const styles = useThemedStyles((colors) => ({
