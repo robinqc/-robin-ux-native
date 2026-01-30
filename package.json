@@ -1,69 +1,69 @@
 {
-  "name": "@robin-ux/native",
-  "version": "0.1.0",
-  "description": "Themeable React Native UI components for Expo projects",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "scripts": {
-    "build": "expo-module build",
-    "clean": "expo-module clean",
-    "lint": "expo-module lint",
-    "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module",
-    "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
-  },
-  "keywords": [
-    "react-native",
-    "expo",
-    "ui-components",
-    "theme",
-    "button",
-    "input",
-    "text",
-    "badge",
-    "segmented-control",
-    "robin-ux"
-  ],
-  "repository": "https://github.com/robinqc/robin-ux-native",
-  "bugs": {
-    "url": "https://github.com/robinqc/robin-ux-native/issues"
-  },
-  "author": "robinqc <robinquinteroc@gmail.com> (https://github.com/robinqc)",
-  "license": "MIT",
-  "homepage": "https://github.com/robinqc/robin-ux-native#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@expo/vector-icons": "^15.0.0",
-    "@types/react": "~19.1.0",
-    "expo": "^54.0.27",
-    "expo-module-scripts": "^5.0.8",
-    "expo-status-bar": "~3.0.0",
-    "react": "^19.0.0",
-    "react-hook-form": "^7.50.0",
-    "react-native": "0.81.5",
-    "react-native-safe-area-context": "~5.0.0"
-  },
-  "peerDependencies": {
-    "@expo/vector-icons": "*",
-    "expo": "*",
-    "expo-status-bar": "*",
-    "react": "*",
-    "react-hook-form": ">=7.0.0",
-    "react-native": "*",
-    "react-native-safe-area-context": "*"
-  },
-  "peerDependenciesMeta": {
-    "react-hook-form": {
-      "optional": true
+    "name": "@robin-ux/native",
+    "version": "0.1.0",
+    "description": "Themeable React Native UI components for Expo projects",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "build": "expo-module build",
+        "clean": "expo-module clean",
+        "lint": "expo-module lint",
+        "test": "expo-module test",
+        "prepare": "expo-module prepare",
+        "prepublishOnly": "expo-module prepublishOnly",
+        "expo-module": "expo-module",
+        "open:ios": "xed example/ios",
+        "open:android": "open -a \"Android Studio\" example/android"
     },
-    "expo-status-bar": {
-      "optional": true
+    "keywords": [
+        "react-native",
+        "expo",
+        "ui-components",
+        "theme",
+        "button",
+        "input",
+        "text",
+        "badge",
+        "segmented-control",
+        "robin-ux"
+    ],
+    "repository": "https://github.com/robinqc/-robin-ux-native",
+    "bugs": {
+        "url": "https://github.com/robinqc/-robin-ux-native/issues"
     },
-    "react-native-safe-area-context": {
-      "optional": true
+    "author": "robinqc <robinquinteroc@gmail.com> (https://github.com/robinqc)",
+    "license": "MIT",
+    "homepage": "https://github.com/robinqc/-robin-ux-native#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@expo/vector-icons": "^15.0.0",
+        "@types/react": "~19.1.0",
+        "expo": "^54.0.27",
+        "expo-module-scripts": "^5.0.8",
+        "expo-status-bar": "~3.0.0",
+        "react": "^19.0.0",
+        "react-hook-form": "^7.50.0",
+        "react-native": "0.81.5",
+        "react-native-safe-area-context": "~5.0.0"
+    },
+    "peerDependencies": {
+        "@expo/vector-icons": "*",
+        "expo": "*",
+        "expo-status-bar": "*",
+        "react": "*",
+        "react-hook-form": ">=7.0.0",
+        "react-native": "*",
+        "react-native-safe-area-context": "*"
+    },
+    "peerDependenciesMeta": {
+        "react-hook-form": {
+            "optional": true
+        },
+        "expo-status-bar": {
+            "optional": true
+        },
+        "react-native-safe-area-context": {
+            "optional": true
+        }
     }
-  }
 }

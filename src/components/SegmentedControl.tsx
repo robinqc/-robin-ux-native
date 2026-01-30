@@ -51,6 +51,7 @@ export function SegmentedControl({ segments, value, onChange, size = "sm", style
             borderRadius: borderRadius.full,
             padding: spacing.xs,
             flexDirection: "row",
+            alignSelf: "flex-start",
         },
         segment: {
             alignItems: "center",
