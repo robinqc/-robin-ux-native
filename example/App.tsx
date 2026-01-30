@@ -52,16 +52,16 @@ export default function App() {
                             it as a full-screen route.
                         </Text>
 
-                        <Input label="Full Name" placeholder="John Doe" />
+                        <Input label="Full Name" placeholder="John Doe" required />
                         <View style={styles.inputSpacer} />
 
-                        <Input label="Enterprise" placeholder="Acme Corp" />
+                        <Input label="Enterprise" placeholder="Acme Corp" required />
                         <View style={styles.inputSpacer} />
 
-                        <Input label="Job Title" placeholder="Software Engineer" />
+                        <Input label="Job Title" placeholder="Software Engineer" required />
                         <View style={styles.inputSpacer} />
 
-                        <TextArea label="Job Description" placeholder="Tell us about your job" />
+                        <TextArea label="Job Description" placeholder="Tell us about your job" maxLength={200} value={"asdf"} helperText="aaa" />
                         <View style={styles.inputSpacer} />
 
                         <Section title="Preferences">

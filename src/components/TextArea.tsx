@@ -14,9 +14,10 @@ export interface TextAreaProps extends Omit<TextInputProps, "style"> {
     style?: StyleProp<ViewStyle>;
     control?: Control<any>;
     name?: string;
+    maxLength?: number;
 }
 
-export function TextArea({ label, error, helperText, minHeight = 120, maxHeight, style, control, name, value, onChangeText, onBlur, ...props }: TextAreaProps) {
+export function TextArea({ label, error, helperText, minHeight = 120, maxHeight, style, control, name, value, onChangeText, onBlur, maxLength, ...props }: TextAreaProps) {
     const { colors } = useTheme();
 
     // Use useController if control and name are provided
@@ -52,6 +53,13 @@ export function TextArea({ label, error, helperText, minHeight = 120, maxHeight,
         helperText: {
             marginTop: spacing.xs,
             fontSize: 12,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            paddingHorizontal: spacing.xs,
+        },
+        charCount: {
+            marginTop: spacing.xs,
+            fontSize: 12,
         },
     }));
 
@@ -72,16 +80,23 @@ export function TextArea({ label, error, helperText, minHeight = 120, maxHeight,
                 {...props}
                 style={styles.textArea}
             />
-            {(error || controller?.fieldState.error?.message) && (
-                <Text variant="caption" color="error" style={styles.helperText}>
-                    {error || controller?.fieldState.error?.message}
-                </Text>
-            )}
-            {!error && !controller?.fieldState.error && helperText && (
-                <Text variant="caption" color="secondary" style={styles.helperText}>
-                    {helperText}
-                </Text>
-            )}
+            <View style={styles.helperText}>
+                {(error || controller?.fieldState.error?.message) && (
+                    <Text variant="caption" color="error">
+                        {error || controller?.fieldState.error?.message}
+                    </Text>
+                )}
+                {!error && !controller?.fieldState.error && helperText && (
+                    <Text variant="caption" color="secondary">
+                        {helperText}
+                    </Text>
+                )}
+                {maxLength && (
+                    <Text variant="caption" color="tertiary">
+                        {inputValue.length}/{maxLength}
+                    </Text>
+                )}
+            </View>
         </View>
     );
 }
